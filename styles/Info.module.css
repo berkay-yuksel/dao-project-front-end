@@ -1,0 +1,24 @@
+.info_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.35em 10em;
+}
+.info_container div{
+    border: 1px solid darkslategrey ;
+    width: 33%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.info_container div h3{
+    padding: 0;
+    margin: 0;
+}
+.info_container div p{
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,39 @@
+.proposals_container{
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0em 10em;
+}
+
+.proposals_container div:first-child{
+    border: 1px solid darkslategrey ;
+    width: 66.5%;
+   
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1em;
+    
+}
+
+.proposals_container div{
+    border: 1px solid darkslategrey ;
+    width: 33%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.proposals_container table{
+    width: 100%;
+    text-align: start;
+    table-layout: fixed ;
+}
+.proposals_container table th{
+
+    text-align: start;
+}
