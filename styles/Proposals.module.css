@@ -20,10 +20,10 @@
 .proposals_container div{
     border: 1px solid darkslategrey ;
     width: 33%;
-    height: 20vh;
+    height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     
 }
@@ -36,4 +36,23 @@
 .proposals_container table th{
 
     text-align: start;
+}
+
+.create_proposal_container{
+    padding-top: 2em;
+  
+}
+.proposals_container h4{
+    width:20vw;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.create_proposal_container input{
+   margin: 1em 0;
+   padding-bottom: 4em;
+   width:20vw;
+   
+}
+.create_proposal_container form{
+    text-align: right;
 }

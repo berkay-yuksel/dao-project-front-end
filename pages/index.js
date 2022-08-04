@@ -2,17 +2,21 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import Info from "../components/info";
 import Proposals from "../components/proposals";
-
+import FetchComponent from "../components/fetch.jsx"
 import {useState,useEffect} from 'react';
-import { useMoralis, useMoralisWeb3Api } from "react-moralis";
+import { useMoralis, useMoralisWeb3Api, useWeb3ExecuteFunction} from "react-moralis";
 
 export default function Home() {
   const { Moralis, isInitialized } = useMoralis();
   const Web3Api=useMoralisWeb3Api();
 
+
   const [proposals, setProposals] = useState([]);
   const [totalP, setTotalP] = useState();
   const [voters, setVoters] = useState();
+
+  
+
 
 
   useEffect(() => {
@@ -66,7 +70,8 @@ export default function Home() {
         <div>
           <Navbar />
           <Info totalP={totalP} voters={voters} />
-          <Proposals proposals={proposals}  />
+          <Proposals proposals={proposals} voters={voters}  />
+        <FetchComponent/>
         </div>
       </main>
     </div>
